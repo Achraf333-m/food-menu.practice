@@ -22,7 +22,7 @@ def calculate_tax(subtotal):
     return round(tax, 2)
 
 
-def summarize_order(order, tax, subtotal):
+def summarize_order(order, subtotal, tax):
     names = [item["name"] for item in order]
     total = round((subtotal + tax), 2)
     return names, total
